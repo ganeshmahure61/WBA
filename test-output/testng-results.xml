@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-12-03T01:57:41 PST" name="Suite" finished-at="2022-12-03T01:58:02 PST" duration-ms="21606">
+    <groups>
+    </groups>
+    <test started-at="2022-12-03T01:57:41 PST" name="Test-Chrome" finished-at="2022-12-03T01:57:48 PST" duration-ms="7673">
+      <class name="com.Test.TC_001">
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:com.Test.TC_001@413d1baf]" started-at="2022-12-03T01:57:41 PST" name="SetUp" finished-at="2022-12-03T01:57:47 PST" duration-ms="5964" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="Test_verify()[pri:0, instance:com.Test.TC_001@413d1baf]" started-at="2022-12-03T01:57:47 PST" name="Test_verify" finished-at="2022-12-03T01:57:47 PST" duration-ms="818" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_verify -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Test.TC_001@413d1baf]" started-at="2022-12-03T01:57:47 PST" name="tearDown" finished-at="2022-12-03T01:57:48 PST" duration-ms="808" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.Test.TC_001 -->
+    </test> <!-- Test-Chrome -->
+    <test started-at="2022-12-03T01:57:49 PST" name="Test-Firefox" finished-at="2022-12-03T01:58:02 PST" duration-ms="12753">
+      <class name="com.Test.TC_001">
+        <test-method is-config="true" signature="BS()[pri:0, instance:com.Test.TC_001@35841320]" started-at="2022-12-03T01:57:39 PST" name="BS" finished-at="2022-12-03T01:57:41 PST" duration-ms="1812" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BS -->
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:com.Test.TC_001@35841320]" started-at="2022-12-03T01:57:49 PST" name="SetUp" finished-at="2022-12-03T01:57:58 PST" duration-ms="8998" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="Test_verify()[pri:0, instance:com.Test.TC_001@35841320]" started-at="2022-12-03T01:57:58 PST" name="Test_verify" finished-at="2022-12-03T01:57:59 PST" duration-ms="585" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_verify -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Test.TC_001@35841320]" started-at="2022-12-03T01:57:59 PST" name="tearDown" finished-at="2022-12-03T01:58:02 PST" duration-ms="3162" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.Test.TC_001 -->
+    </test> <!-- Test-Firefox -->
+  </suite> <!-- Suite -->
+</testng-results>
