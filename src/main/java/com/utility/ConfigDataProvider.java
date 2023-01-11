@@ -10,7 +10,7 @@ public class ConfigDataProvider {
 	Properties pro;
 	
 	public ConfigDataProvider () throws Exception {
-		String filepath = "C:\\Users\\GANESH MAHURE\\Desktop\\Eclipse\\WBA-US\\Health_Care\\Config\\config.properties";
+		String filepath = "C:\\Users\\PM\\eclipse-workspace\\WBA\\Config\\config.properties";
 		FileInputStream fis = new FileInputStream(filepath);
 		
 		pro = new Properties();

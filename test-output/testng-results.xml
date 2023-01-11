@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="1" failed="0" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-03T01:57:41 PST" name="Suite" finished-at="2022-12-03T01:58:02 PST" duration-ms="21606">
+  <suite started-at="2023-01-11T12:54:42 IST" name="Suite" finished-at="2023-01-11T12:55:30 IST" duration-ms="47683">
     <groups>
     </groups>
-    <test started-at="2022-12-03T01:57:41 PST" name="Test-Chrome" finished-at="2022-12-03T01:57:48 PST" duration-ms="7673">
+    <test started-at="2023-01-11T12:54:42 IST" name="Test-Chrome" finished-at="2023-01-11T12:54:45 IST" duration-ms="2623">
       <class name="com.Test.TC_001">
-        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:com.Test.TC_001@413d1baf]" started-at="2022-12-03T01:57:41 PST" name="SetUp" finished-at="2022-12-03T01:57:47 PST" duration-ms="5964" status="PASS">
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:com.Test.TC_001@65b104b9]" started-at="2023-01-11T12:54:42 IST" name="SetUp" finished-at="2023-01-11T12:54:45 IST" duration-ms="2476" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -15,26 +15,120 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId=619687]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId=619687
+at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
+at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
+at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
+at com.utility.Base_Class.SetUp(Base_Class.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="Test_verify()[pri:0, instance:com.Test.TC_001@413d1baf]" started-at="2022-12-03T01:57:47 PST" name="Test_verify" finished-at="2022-12-03T01:57:47 PST" duration-ms="818" status="PASS">
+        <test-method signature="Test_verify()[pri:0, instance:com.Test.TC_001@65b104b9]" started-at="2023-01-11T12:54:45 IST" name="Test_verify" finished-at="2023-01-11T12:54:45 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId=619687]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId=619687
+at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
+at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
+at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
+at com.utility.Base_Class.SetUp(Base_Class.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test_verify -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Test.TC_001@413d1baf]" started-at="2022-12-03T01:57:47 PST" name="tearDown" finished-at="2022-12-03T01:57:48 PST" duration-ms="808" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Test.TC_001@65b104b9]" started-at="2023-01-11T12:54:45 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1673421885197" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.Test.TC_001 -->
     </test> <!-- Test-Chrome -->
-    <test started-at="2022-12-03T01:57:49 PST" name="Test-Firefox" finished-at="2022-12-03T01:58:02 PST" duration-ms="12753">
+    <test started-at="2023-01-11T12:54:45 IST" name="Test-Firefox" finished-at="2023-01-11T12:54:52 IST" duration-ms="6386">
       <class name="com.Test.TC_001">
-        <test-method is-config="true" signature="BS()[pri:0, instance:com.Test.TC_001@35841320]" started-at="2022-12-03T01:57:39 PST" name="BS" finished-at="2022-12-03T01:57:41 PST" duration-ms="1812" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BS -->
-        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:com.Test.TC_001@35841320]" started-at="2022-12-03T01:57:49 PST" name="SetUp" finished-at="2022-12-03T01:57:58 PST" duration-ms="8998" status="PASS">
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:com.Test.TC_001@4716be8b]" started-at="2023-01-11T12:54:45 IST" name="SetUp" finished-at="2023-01-11T12:54:52 IST" duration-ms="6366" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -42,18 +136,143 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId=619687]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId=619687
+at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
+at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
+at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
+at com.utility.Base_Class.SetUp(Base_Class.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="Test_verify()[pri:0, instance:com.Test.TC_001@35841320]" started-at="2022-12-03T01:57:58 PST" name="Test_verify" finished-at="2022-12-03T01:57:59 PST" duration-ms="585" status="PASS">
+        <test-method signature="Test_verify()[pri:0, instance:com.Test.TC_001@4716be8b]" started-at="2023-01-11T12:54:52 IST" name="Test_verify" finished-at="2023-01-11T12:54:52 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId=619687]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId=619687
+at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
+at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
+at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
+at com.utility.Base_Class.SetUp(Base_Class.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test_verify -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Test.TC_001@35841320]" started-at="2022-12-03T01:57:59 PST" name="tearDown" finished-at="2022-12-03T01:58:02 PST" duration-ms="3162" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Test.TC_001@4716be8b]" started-at="2023-01-11T12:54:52 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1673421892320" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.Test.TC_001 -->
     </test> <!-- Test-Firefox -->
+    <test started-at="2023-01-11T12:54:52 IST" name="Test-Edge" finished-at="2023-01-11T12:55:30 IST" duration-ms="37847">
+      <class name="com.Test.TC_001">
+        <test-method is-config="true" signature="BS()[pri:0, instance:com.Test.TC_001@6cce16f4]" started-at="2023-01-11T12:54:41 IST" name="BS" finished-at="2023-01-11T12:54:42 IST" duration-ms="1083" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BS -->
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:com.Test.TC_001@6cce16f4]" started-at="2023-01-11T12:54:52 IST" name="SetUp" finished-at="2023-01-11T12:55:18 IST" duration-ms="26492" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="Test_verify()[pri:0, instance:com.Test.TC_001@6cce16f4]" started-at="2023-01-11T12:55:18 IST" name="Test_verify" finished-at="2023-01-11T12:55:29 IST" duration-ms="10825" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_verify -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Test.TC_001@6cce16f4]" started-at="2023-01-11T12:55:29 IST" name="tearDown" finished-at="2023-01-11T12:55:30 IST" duration-ms="523" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.Test.TC_001 -->
+    </test> <!-- Test-Edge -->
   </suite> <!-- Suite -->
 </testng-results>

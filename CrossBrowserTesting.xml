@@ -20,5 +20,12 @@
     </classes>
   </test> <!-- Test -->
   
+   <test thread-count="5" name="Test-Edge">
+  <parameter name="BrowserName" value="Edge"></parameter>
+    <classes>
+      <class name="com.Test.TC_001"/>
+    </classes>
+  </test> <!-- Test -->
+  
   
 </suite> <!-- Suite -->

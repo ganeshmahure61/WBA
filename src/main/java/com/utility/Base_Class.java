@@ -36,6 +36,9 @@ public class Base_Class {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 		}
+		else if (BrowserName.equalsIgnoreCase("Edge"))
+			WebDriverManager.edgedriver().setup();
+		    driver = new EdgeDriver();
 		 
 		
 		 driver.get(config.getBaseUrl());

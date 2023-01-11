@@ -9,7 +9,7 @@ public class ExcelDataProvider {
 	XSSFWorkbook wb;
 	public ExcelDataProvider () throws Exception {
 		
-		String filepath = "C:\\Users\\GANESH MAHURE\\Desktop\\Eclipse\\WBA-US\\Health_Care\\TestData\\Data.xlsx";
+		String filepath = "C:\\Users\\PM\\eclipse-workspace\\WBA\\TestData\\Data.xlsx";
 		FileInputStream fis = new FileInputStream(filepath);
 		wb = new XSSFWorkbook(fis);
 	}
