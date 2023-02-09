@@ -4,7 +4,7 @@
   <listeners>
     <listener class-name="com.utility.Listner"/>
   </listeners>
-  <test thread-count="5" name="Test-Chrome(failed)">
+  <test thread-count="5" name="Test(failed)">
     <parameter name="BrowserName" value="Chrome"/>
     <classes>
       <class name="com.Test.TC_001">
@@ -16,18 +16,5 @@
         </methods>
       </class> <!-- com.Test.TC_001 -->
     </classes>
-  </test> <!-- Test-Chrome(failed) -->
-  <test thread-count="5" name="Test-Firefox(failed)">
-    <parameter name="BrowserName" value="Firefox"/>
-    <classes>
-      <class name="com.Test.TC_001">
-        <methods>
-          <include name="Test_verify"/>
-          <include name="SetUp"/>
-          <include name="tearDown"/>
-          <include name="BS"/>
-        </methods>
-      </class> <!-- com.Test.TC_001 -->
-    </classes>
-  </test> <!-- Test-Firefox(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

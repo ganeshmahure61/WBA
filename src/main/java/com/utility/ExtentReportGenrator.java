@@ -11,7 +11,7 @@ public class ExtentReportGenrator {
 	public static ExtentReports getReports() {
 		
 		// FOR Document Title , Name & Theme
-		String reportpath = "C:\\Users\\GANESH MAHURE\\Desktop\\Heallth Care Project\\Health_Care_Project\\Health_Care\\Reports";
+		String reportpath = "C:\\Users\\PM\\eclipse-workspace\\WBA\\Reports";
 		ExtentSparkReporter reporter = new ExtentSparkReporter(reportpath);
 		
 		reporter.config().setDocumentTitle("AUTOMATION REPORTS");

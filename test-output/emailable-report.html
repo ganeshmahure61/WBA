@@ -9,16 +9,11 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test-Chrome</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">2,623</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Test-Firefox</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">6,386</td><td></td><td></td></tr>
-<tr><td><a href="#t2">Test-Edge</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">37,847</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">1</th><th class="num attn">2</th><th class="num">0</th><th class="num">0</th><th class="num">46,856</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">2,381</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test-Chrome &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.Test.TC_001</td><td><a href="#m0">SetUp</a></td><td rowspan="1">1673421882627</td><td rowspan="1">2476</td></tr><tr><th colspan="4">Test-Chrome &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">com.Test.TC_001</td><td><a href="#m1">tearDown</a></td><td rowspan="1">1673421885197</td><td rowspan="1">-1673421885197</td></tr><tr><th colspan="4">Test-Chrome &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.Test.TC_001</td><td><a href="#m2">Test_verify</a></td><td rowspan="1">1673421885129</td><td rowspan="1">0</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Test-Firefox &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.Test.TC_001</td><td><a href="#m3">SetUp</a></td><td rowspan="1">1673421885943</td><td rowspan="1">6366</td></tr><tr><th colspan="4">Test-Firefox &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">com.Test.TC_001</td><td><a href="#m4">tearDown</a></td><td rowspan="1">1673421892320</td><td rowspan="1">-1673421892320</td></tr><tr><th colspan="4">Test-Firefox &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.Test.TC_001</td><td><a href="#m5">Test_verify</a></td><td rowspan="1">1673421892315</td><td rowspan="1">0</td></tr></tbody>
-<tbody id="t2"><tr><th colspan="4">Test-Edge &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.Test.TC_001</td><td><a href="#m6">Test_verify</a></td><td rowspan="1">1673421918910</td><td rowspan="1">10825</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.Test.TC_001</td><td><a href="#m0">SetUp</a></td><td rowspan="1">1675871549024</td><td rowspan="1">2273</td></tr><tr><th colspan="4">Test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">com.Test.TC_001</td><td><a href="#m1">tearDown</a></td><td rowspan="1">1675871551359</td><td rowspan="1">-1675871551359</td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.Test.TC_001</td><td><a href="#m2">Test_verify</a></td><td rowspan="1">1675871551310</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Test-Chrome</h2><h3 id="m0">com.Test.TC_001#SetUp</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Chrome</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId=619687
+<h2>Test</h2><h3 id="m0">com.Test.TC_001#SetUp</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Chrome</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId=619687
 	at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
 	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
 	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
@@ -41,29 +36,5 @@
 	at com.utility.Base_Class.SetUp(Base_Class.java:41)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Test-Firefox</h2><h3 id="m3">com.Test.TC_001#SetUp</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Firefox</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId=619687
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
-	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
-	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-	at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
-	at com.utility.Base_Class.SetUp(Base_Class.java:41)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.Test.TC_001#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.Test.TC_001#Test_verify</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId=619687
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
-	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
-	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-	at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
-	at com.utility.Base_Class.SetUp(Base_Class.java:41)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Test-Edge</h2><h3 id="m6">com.Test.TC_001#Test_verify</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -7,10 +7,9 @@
 </listeners>
 
   <test thread-count="5" name="Test">
-  <parameter name="BrowserName" value="Firefox"></parameter>
+  <parameter name="BrowserName" value="Chrome"></parameter>
     <classes>
       <class name="com.Test.TC_001"/>
-      <class name="com.Test.TC_002"/>
     </classes>
   </test> <!-- Test -->
   
