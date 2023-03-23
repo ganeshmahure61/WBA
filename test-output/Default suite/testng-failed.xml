@@ -8,6 +8,7 @@
           <include name="Test_verify"/>
           <include name="SetUp"/>
           <include name="tearDown"/>
+          <include name="BS"/>
         </methods>
       </class> <!-- com.Test.TC_001 -->
     </classes>

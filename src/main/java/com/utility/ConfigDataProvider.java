@@ -21,4 +21,22 @@ public class ConfigDataProvider {
 		return pro.getProperty("BaseUrl");
 	}
 	
+	public String getuserName () {
+		return pro.getProperty("userName");
+	}
+	
+	public String getpassword () {
+		return pro.getProperty("password");
+	}
+	
+	public String getsearch_job () {
+		return pro.getProperty("search_job");
+	}
+	
+	public String getenter_location () {
+		return pro.getProperty("enter_location");
+	}
+
+	
+	
 }

@@ -1,5 +1,7 @@
 package com.utility;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -18,37 +20,33 @@ public class Base_Class {
 	public static WebDriver driver;
 	public static ConfigDataProvider config;
 	public static ExcelDataProvider excel;
+	public static Logger log;
+	
 	@BeforeSuite 
 	public void BS() throws Exception {
 		config = new ConfigDataProvider();
 		 excel= new ExcelDataProvider();
 	}
 	
-	@Parameters ("BrowserName")
+//	@Parameters ("BrowserName")
 	
 	@BeforeMethod
-	public void SetUp (String BrowserName) {
-		if(BrowserName.equalsIgnoreCase("Chrome")) {
+	public void SetUp () {
+	//	if(BrowserName.equalsIgnoreCase("Chrome")) {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
-		}
-		else if (BrowserName.equalsIgnoreCase("Firefox")) {
-			WebDriverManager.firefoxdriver().setup();
-			driver = new FirefoxDriver();
-		}
-		else if (BrowserName.equalsIgnoreCase("Edge"))
-			WebDriverManager.edgedriver().setup();
-		    driver = new EdgeDriver();
-		 
+	//	}
+	
+		
 		
 		 driver.get(config.getBaseUrl());
 		 driver.manage().window().maximize();  
-	   
+		 log = LogManager.getLogger("WBA");
 	}
 	
 	@AfterMethod
 	public void tearDown () {	
-		driver.quit();
+	//	driver.quit();
 	}
 
 }

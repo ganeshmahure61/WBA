@@ -2,12 +2,14 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 
-<listeners>
-<listener class-name="com.utility.Listner"></listener>
-</listeners>
+	<listeners>
+	<listener class-name="com.utility.Listner"></listener>
+	</listeners>
+
+  	<parameter name="BrowserName" value="Chrome"></parameter>
+
 
   <test thread-count="5" name="Test">
-  <parameter name="BrowserName" value="Chrome"></parameter>
     <classes>
       <class name="com.Test.TC_001"/>
     </classes>

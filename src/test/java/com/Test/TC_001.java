@@ -1,31 +1,39 @@
 package com.Test;
 
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import com.pages.loginPOM;
+import com.pages.loginpom;
 import com.utility.Base_Class;
 import com.utility.Library;
+@Listeners(com.utility.Listner.class) 
 
 public class TC_001  extends Base_Class {
-	
 	@Test
-	public void Test_verify () {
+	public void Test_verify () throws Exception {	
+		log.info("============================  Test Verify  ========================");
 		
-		//HealthCare Project
-		//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
+		loginpom login=PageFactory.initElements(driver, loginpom.class);
 		
+		Library.Custom_Click(login.getage(), "Click on Age");
+		Library.Custom_Click(login.getgender(), "Click on Gender");
+		Library.Custom_Click(login.getplan(), "Click on Plan");
+		Library.Custom_Click(login.getplan(), "Click on Get Started !!");
 		
-		loginPOM login=PageFactory.initElements(driver, loginPOM.class);
+		Alert alt = (Alert) driver.switchTo().frame(1);
+		Library.Custom_Click(login.getdismiss_btn(), "Click on Dismiss");
 		
-		Library.Custom_SendKeys(login.getTxt_email(), excel.getStringData("Sheet1", 0, 0), "EMAIL");
-		Library.Custom_SendKeys(login.getTxt_pass(), excel.getStringData("Sheet1", 0, 1), "PASSWORD");
-		Library.Custom_Click(login.getLogin_btn(),"LOGIN BUTTON");
-		
-		
-		//For get screen shot in report of test case
-		
-	//	Assert.assertTrue(false);
+	
 	}	
 }
